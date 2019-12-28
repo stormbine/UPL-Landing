@@ -1,0 +1,87 @@
+$uploragne: #f58233;
+$copycolor: #231f20;
+
+* { font-family: 'Open Sans', sans-serif; }
+
+header, footer {
+    img { width: 100%; height: auto; }
+}
+
+.main-content {
+    padding: 5rem 0;
+}
+
+p { font-size: 0.875em; color: $copycolor; }
+h1 { font-size: 1.5em; color: $copycolor; margin: 2rem 0; font-weight: 700; }
+h2 { font-size: 1em; color: $uploragne; margin: 1rem 0 0.5rem 0; font-weight: 700; }
+
+a { color: $uploragne; text-decoration: underline;
+    &:hover { color: darken($uploragne, 15%); }
+}
+
+.table {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #dee2e6;
+
+    thead {
+        th { 
+            border: 0;
+            font-size: 0.75em;
+            background: $uploragne;
+            color: #ffffff;
+            font-weight: 700;
+        }
+    }
+
+    tbody { 
+        td {
+            font-size: 0.8em;
+        }
+    }
+}
+
+.program-cond {
+    margin-top: 2rem;
+
+    .head { 
+        border: 0;
+        font-size: 0.875em;
+        background: $uploragne;
+        color: #ffffff;
+        font-weight: 700;
+        padding: 0.750em;
+    }
+
+    .cond-item {
+        position: relative;
+        padding: 0.75em 1em 0.75em 2.5em;
+        font-size: 0.875em;
+
+        &:nth-child(even) {
+            background: #f7f7f7;
+        }
+
+        .num { 
+            position: absolute;
+            top: 0.75em;
+            left: 1em;
+            font-weight: 700;
+            color: $uploragne;
+        }
+    }
+}
+
+.foot-small-print {
+    margin: 4rem 0 2rem 0;
+    font-size: 0.75em;
+    line-height: 1.3;
+
+    p strong { font-size: 0.875rem; color: $copycolor; }
+
+    .foot-logo { 
+        margin-bottom: 1.2rem;
+        display: block;
+
+        img { max-height: 105px; }
+    }
+}
